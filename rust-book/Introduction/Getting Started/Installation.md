@@ -6,5 +6,12 @@ The first step is to install Rust. We'll download Rust through `rustup`, a comma
 Note: If you prefer not to use `rustup` for some reason, please see the `Other Rust Installation Methods Page` for more options. 
 ```
 
-The following steps
+The following steps install the latest stable version of the rust compiler. Rust's stability guarantees ensure that all the examples in the book that compile will continue to compile with newer Rust versions. The output might differ slightly between versions because Rust often improves error messages and warnings. In other words, any newer, stable version of Rust you install using these steps should work as expected with the content of this book.
+
 ```
+Command line Notation
+In this chapter and throught the book, we'll show some commands used in the terminal. Lines that you should enter in a terminal all start with `$`. you don't need to type the `$` character; it's the command line prompt shown to indicate the start of each command. Lines that don't start with `$` typically show the output of the previous command. Additionally, PowerShell-specific examples will use `>` rather than `$`.
+```
+
+## installing rustup on Linux or macOS
+
