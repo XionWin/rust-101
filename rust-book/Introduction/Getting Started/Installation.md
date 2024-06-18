@@ -1,7 +1,7 @@
 # Installation
 The first step is to install Rust. We'll download Rust through `rustup`, a command line tool for managing Rust versions and associated tools. You'll need an internet connection for the download.
 
-    Note: If you prefer not to use `rustup` for some reason, please see the `Other Rust Installation Methods Page` for more options. 
+    Note: If you prefer not to use `rustup` for some reason, please see the `Other Rust Installation Methods Page` for more options.
 
 The following steps install the latest stable version of the rust compiler. Rust's stability guarantees ensure that all the examples in the book that compile will continue to compile with newer Rust versions. The output might differ slightly between versions because Rust often improves error messages and warnings. In other words, any newer, stable version of Rust you install using these steps should work as expected with the content of this book.
 
@@ -27,4 +27,48 @@ Linux users should generally install GCC or Clang, according to their distributi
 
 ## Installing rustup on Windows
 On Windows, go to https://www.rust-lang.org/tools/install and follow the instructions for installing Rust. At some point in the installation, you'll receive a message explaining that you'll also need the MSVC build tools for Visual Studio 2013 or later.
+To acquire the build tools, you'll need to install `Visual Studio 2022`. When asked which workloads to install, include:
+
+* Desktop Development with C++
+* The Windows 10 or 11 SDK
+* The English language pack component, along with any other language pack of your choosing
+
+The rest of this book use commands that work in both `cmd.exe` and PowerShell. If there are specific differences, we'll explain which to use.
+
+## Troubleshooting
+To check whether you have Rust installed correctly, open a shell and enter this line:
+
+    $ rustc --version
+
+If you see this information, you have installed Rust successfully! If you don't see this information, check that Rust is in your `%PATH%` system variable as follows.
+
+In Windows CMD, use:
+
+    > echo %PATH%
+
+In PowerShell, use:
+
+    > echo $env:Path
+
+In Linux and macOS, use:
+
+    $ echo $PATH
+
+If that's all correct and Rust still isn't working, there are a number of places you can get help. Find out how to get in touch with other Rustaceans(a silly nickname we call ourselves) on the community page.
+
+## Updating and Uninstalling
+
+Once Rust is installed via `rustup`, updating to a newly released version is easy. From your shell, run the following update script:
+
+    $ rustup update
+
+To uninstall Rust and `rustup`, run the following uninstall script from your shell:
+
+    $ rustup self uninstall
+
+## Local Documentation
+
+The installation of Rust also includes a local copy of the documentation so that you can read it offline. Run `rustup doc` to open the local documentation in your browser.
+
+
 
