@@ -73,7 +73,7 @@ This command creates an executable file in `target/debug/hello_cargo` (or `targe
 $ ./target/debug/hello_cargo # or .\target\debug\hello_cargo.exe on Windows
 Hello, world!
 ```
-If all goes well, `Hello, world!` should print to the terminal. Running `cargo build` for the first time also causes `Cargo` to create a new file at the top level: `Cargo.lock`. This file keeps track of the exact versions of dependencies in your project. This project doesn't have dependencies, so the file is a bit <u>sparse(|*spärs*| 稀;疏)</u>. You won't ever need to change this file manually; `Cargo` manages its contents for you.
+If all goes well, `Hello, world!` should print to the terminal. Running `cargo build` for the first time also causes `Cargo` to create a new file at the top level: `Cargo.lock`. This file keeps track of the exact versions of dependencies in your project. This project doesn't have dependencies, so the file is a bit [!TIP]sparse(|*spärs*| 稀;疏). You won't ever need to change this file manually; `Cargo` manages its contents for you.
 
 We just built a project with `cargo build` and ran it with `./target/debug/hello_cargo`, but we can also use `cargo run` to compile the code and then run the resultant executable all in one command:
 ```
