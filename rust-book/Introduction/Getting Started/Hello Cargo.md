@@ -112,5 +112,22 @@ An additional advantage of using `Cargo` is that the commands are the same no ma
 ## Cargo as Convention
 
 With Simple projects, `Cargo` doesn't provide a lot of value over just using `rustc`, but it will prove its worth as your programs become more 📝intricate(|ˈintrəkət| 复杂的; 错综复杂的). Once programs grow to multiple files or need a dependency, it's much easier to let `Cargo` coordinate the build.
+```
+$ git clone example.org/someproject
+$ cd someproject
+$ cargo build
+```
+For more information about `Cargo`, check out its documentation.
 
+## Summary
 
+You're already off to a great start on your Rust journey! In this chapter, you've learned how to:
+  * Install the latest stable version of Rust using `rustup`
+  * Update to a newer Rust version
+  * Open locally installed documentation
+  * Write and run a "hello, world!" program using `rustc` directly
+  * Create an run a new project using the conventions of `Cargo`
+
+This is a great time to build a more substantial program to get used to reading and writing Rust code. So, In Chapter 2, we'll build a guessing game program, If you would rather start by learning how common programming concepts works in Rust, see Chapter 3 and then return to Chapter 2.
+
+📗 Thu 20 Jun 2024 05:23:38 PM CST
