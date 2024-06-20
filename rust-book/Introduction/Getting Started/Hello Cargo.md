@@ -84,4 +84,12 @@ Hello, world!
 ```
 Using `cargo run` is more convenient than having to remember to run `cargo build` and then use the whole path to the binary, so most developers use `cargo run`.
 
+Notice that this time we didn't see output indicating that `Cargo` was compiling `hello_cargo`. `Cargo` figured out that this files hadn't changed, so it didn't rebuild but just ran the binary. If you had modified your source code, `Cargo` would have rebuilt the project before running it, and you would have see this output:
+```
+$ cargo run
+   Compiling hello_cargo v0.1.0 (file:///projects/hello_cargo)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.33 secs
+     Running `target/debug/hello_cargo`
+Hello, world!
+```
 
