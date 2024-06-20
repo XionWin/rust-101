@@ -56,6 +56,10 @@ fn main() {
 ```
 `Cargo` has generated a "Hello, world!" project for you, just like the one we wrote in List 1-1! So far, the differences between our project and the project `Cargo` generated are the `Cargo` placed the code in the `src` directory and we have a `Cargo.toml` configuration file in the top directory.
 
+`Cargo` expects your source files to live inside the `src` directory. The top-level project directory is just for `README` files, license information, configuration files, and anything else not related to your code. Using `Cargo` helps your organize your projects. There's a place for everything, and everything is in its place.
+
+If you started a project that doesn't using `Cargo`, as we did with the "Hello, world!" project, you can convert it to a project that does use `Cargo`. Move the project code into the `src` directory and create an appropriate `Cargo.toml` file.
+
 
 
 
