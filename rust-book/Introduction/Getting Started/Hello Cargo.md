@@ -92,4 +92,10 @@ $ cargo run
      Running `target/debug/hello_cargo`
 Hello, world!
 ```
-
+Cargo also provides a command called `cargo check`. This command quickly checks your code to make sure it compiles build doesn't produce an executable:
+```
+$ cargo check
+   Checking hello_cargo v0.1.0 (file:///projects/hello_cargo)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.32 secs
+```
+Why would you not want an executable? `cargo check` is much faster than `cargo build` because it skips the step of producing an executable. If you're continually checking your work while writing the code, using `cargo check` will speed up the progress of letting you know if you projects is still compiling.
